@@ -1,0 +1,9 @@
+<div *ngIf="students.length">
+  <div
+    *ngFor="let student of students | studentFilter : showBalance"
+    [appBalanceColor]="student.feesBalance"
+  >
+    <h2>Student name: {{ student.name }}</h2>
+    <p>Fees balance: {{ student.feesBalance | currency }}</p>
+  </div>
+</div>

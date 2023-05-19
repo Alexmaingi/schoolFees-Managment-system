@@ -1,0 +1,10 @@
+<h2>Add Student</h2>
+<div ngClass="formInput">
+  <label>Student name</label>
+  <input type="text" #name />
+  <label>Fees balance</label>
+  <input type="text" #feesBalance />
+  <button (click)="addStudent(name.value, feesBalance.value)">
+    Add Student
+  </button>
+</div>
